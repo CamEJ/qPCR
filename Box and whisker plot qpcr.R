@@ -42,7 +42,7 @@ Cps <- ggplot(d, aes(factor(GrowthStage), CopiesPerG, fill=factor(NucType))) +
   
   ## + geom_boxplot so it knows what type of plot
   
-  geom_boxplot() +
+  geom_boxplot(colour="black") +
   #scale_fill_viridis(discrete=TRUE) +
   
   ## scale_fill_manual to give different from default colour
