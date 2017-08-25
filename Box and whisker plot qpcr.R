@@ -3,6 +3,10 @@
 
 d = read.table("LimeCps-CORRECT.txt", sep = "\t", row.names=1, header=T)
 
+# run setFactorOrder function then run following to keep them in right order for plot. 
+
+d[["NucType"]] <- setFactorOrder(d[["NucType"]], c("DNA", "cDNA"))
+
 ## load ggplot
 
 library(ggplot2)
